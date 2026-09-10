@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class IT21802812Lab3Q1A {
+public class IT21802812Lab3Q1B {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -12,8 +12,11 @@ public class IT21802812Lab3Q1A {
 
         double totalAmount = pricePerKg * kilograms;
 
+        double discount = totalAmount * 0.10;
+        double amountAfterDiscount = totalAmount - discount;
+
         System.out.println();
-        System.out.println("The total amount is: " + totalAmount);
+        System.out.println("The total amount with 10% discount is: " + amountAfterDiscount);
 
         input.close();
     }
