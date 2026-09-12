@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class IT22195616Lab3Q2{
+	
+	public static void main (String[] args){;
+	
+	double salary , otHours , otHourlyrate , otAmount , totalSalary;
+	
+	Scanner input = new Scanner (System.in);
+	
+	System.out.print("Enter the monthly salary : ");
+	salary = input.nextDouble();
+	
+	System.out.print("Enter the number of OT hours : ");
+	otHours = input.nextDouble();
+	
+	System.out.print("Enter the OT hourly rate : ");
+	otHourlyrate = input.nextDouble();
+	
+	otAmount = otHours * otHourlyrate;
+	totalSalary = salary + otAmount;
+	
+	System.out.print("The total salary including OT is :" + totalSalary);
+	}
+	
+	
+}
